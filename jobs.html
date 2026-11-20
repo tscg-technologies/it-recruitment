@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Job Search | Technology Careers &amp; Vacancies</title>
+  <meta name="description" content="Discover curated software engineering, data, AI, cloud, and cybersecurity opportunities with our multi-technology filter engine.">
+  
+  <meta property="og:title" content="IT Job Search | Technology Careers &amp; Vacancies">
+  <meta property="og:description" content="Search software engineering, data analytics, cloud, and AI roles across premier tech hubs.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="IT Talent &amp; Technology Recruitment Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="22,3 39,12 39,32 22,41 5,32 5,12" stroke="#477DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(71,125,255,0.08)"/>
+            <circle cx="22" cy="22" r="5" fill="#35C6E8"/>
+            <path d="M22 3L22 17M39 32L26 25M5 32L18 25" stroke="#35C6E8" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="3" r="2.5" fill="#4AC6A5"/>
+            <circle cx="39" cy="32" r="2.5" fill="#9876F5"/>
+            <circle cx="5" cy="32" r="2.5" fill="#477DFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">IT TALENT &amp; TECHNOLOGY</span>
+          <span class="brand-subtitle">RECRUITMENT CONSULTANCY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="candidates.html" class="nav-link">Candidates</a>
+        <a href="jobs.html" class="nav-link active">IT Jobs</a>
+        <a href="employers.html" class="nav-link">Employers</a>
+        <a href="specializations.html" class="nav-link">Specializations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="jobs.html" class="btn btn-sm btn-outline active">Find IT Jobs</a>
+        <a href="employers.html" class="btn btn-sm btn-primary">Hire Tech Talent</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="candidates.html" class="nav-link">Candidates</a>
+      <a href="jobs.html" class="nav-link active">IT Jobs</a>
+      <a href="employers.html" class="nav-link">Employers</a>
+      <a href="specializations.html" class="nav-link">Specializations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+      <a href="jobs.html" class="btn btn-outline" style="width: 100%;">Find IT Jobs</a>
+      <a href="employers.html" class="btn btn-primary" style="width: 100%;">Hire Tech Talent</a>
+    </div>
+  </div>
+  <div class="mobile-overlay"></div>
+
+  <main id="main-content">
+
+    <!-- Header Hero Banner (Dark) -->
+    <section class="section-sm" style="padding-top: calc(var(--header-height) + 2.5rem); background: radial-gradient(circle at 50% 10%, rgba(71, 125, 255, 0.15) 0%, transparent 60%), var(--color-midnight); border-bottom: 1px solid var(--color-border);">
+      <div class="container text-center">
+        <span class="tag-label">Technology Job Search</span>
+        <h1 style="margin: 0.5rem 0 1rem;">FIND YOUR NEXT OPPORTUNITY IN TECHNOLOGY.</h1>
+        <p style="max-width: 720px; margin: 0 auto 1.5rem; color: #CBD5E1;">
+          Explore representative vacancies across software engineering, cloud, data, AI, cybersecurity, and enterprise applications.
+        </p>
+
+        <!-- Mandatory Vacancy Disclosure -->
+        <div class="demo-badge-bar" style="margin: 0 auto; max-width: 820px;">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+          <strong>DEMO VACANCY — NOT A VERIFIED LIVE JOB. FOR PORTFOLIO DEMONSTRATION PURPOSES ONLY.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Job Search & Results Interface (Light background for contrast) -->
+    <section class="section section-light" style="padding-top: 3rem;">
+      <div class="container">
+        <div class="job-search-layout">
+
+          <!-- Left Filter Sidebar -->
+          <aside class="filter-sidebar" aria-label="Job Search Filters">
+            <div class="filter-sidebar-header">
+              <h3>Filter Opportunities</h3>
+              <button id="btn-clear-all-filters" class="btn-clear-filters" type="button">Clear All</button>
+            </div>
+
+            <!-- Keyword Search -->
+            <div class="filter-group">
+              <label for="search-keyword" class="filter-group-title" style="display: block;">Keyword / Role</label>
+              <input type="text" id="search-keyword" class="form-input" placeholder="e.g. Python, React, Lead" style="background: #FFFFFF; color: #0F172A; border-color: #CBD5E1;">
+            </div>
+
+            <!-- Multi-Select Technology Filter Cloud -->
+            <div class="filter-group">
+              <div class="filter-group-title">Multi-Select Technologies</div>
+              <div class="tech-filter-pills-cloud">
+                <button type="button" class="tech-filter-pill" data-tech="Python">Python</button>
+                <button type="button" class="tech-filter-pill" data-tech="Java">Java</button>
+                <button type="button" class="tech-filter-pill" data-tech="JavaScript">JavaScript</button>
+                <button type="button" class="tech-filter-pill" data-tech="TypeScript">TypeScript</button>
+                <button type="button" class="tech-filter-pill" data-tech="React">React</button>
+                <button type="button" class="tech-filter-pill" data-tech="Angular">Angular</button>
+                <button type="button" class="tech-filter-pill" data-tech="Node.js">Node.js</button>
+                <button type="button" class="tech-filter-pill" data-tech=".NET">.NET</button>
+                <button type="button" class="tech-filter-pill" data-tech="SQL">SQL</button>
+                <button type="button" class="tech-filter-pill" data-tech="Power BI">Power BI</button>
+                <button type="button" class="tech-filter-pill" data-tech="AWS">AWS</button>
+                <button type="button" class="tech-filter-pill" data-tech="Azure">Azure</button>
+                <button type="button" class="tech-filter-pill" data-tech="Kubernetes">Kubernetes</button>
+                <button type="button" class="tech-filter-pill" data-tech="PyTorch">Machine Learning</button>
+                <button type="button" class="tech-filter-pill" data-tech="SIEM">Cybersecurity</button>
+                <button type="button" class="tech-filter-pill" data-tech="SAP">SAP</button>
+                <button type="button" class="tech-filter-pill" data-tech="Salesforce">Salesforce</button>
+              </div>
+            </div>
+
+            <!-- Location Dropdown -->
+            <div class="filter-group">
+              <label for="filter-location" class="filter-group-title" style="display: block;">Location</label>
+              <select id="filter-location" class="form-select" style="background: #FFFFFF; color: #0F172A; border-color: #CBD5E1;">
+                <option value="all">All Locations</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Remote">Remote — India</option>
+              </select>
+            </div>
+
+            <!-- Experience Level Dropdown -->
+            <div class="filter-group">
+              <label for="filter-experience" class="filter-group-title" style="display: block;">Experience Level</label>
+              <select id="filter-experience" class="form-select" style="background: #FFFFFF; color: #0F172A; border-color: #CBD5E1;">
+                <option value="all">All Experience Levels</option>
+                <option value="0-2">Fresher / 0–2 Years</option>
+                <option value="2-5">2–5 Years</option>
+                <option value="5-8">5–8 Years</option>
+                <option value="8+">8+ Years</option>
+              </select>
+            </div>
+
+            <!-- Employment Type Dropdown -->
+            <div class="filter-group">
+              <label for="filter-employment" class="filter-group-title" style="display: block;">Employment Type</label>
+              <select id="filter-employment" class="form-select" style="background: #FFFFFF; color: #0F172A; border-color: #CBD5E1;">
+                <option value="all">All Employment Types</option>
+                <option value="Permanent">Permanent</option>
+                <option value="Contract">Contract</option>
+                <option value="Part-Time">Part-Time</option>
+                <option value="Internship">Internship</option>
+              </select>
+            </div>
+
+            <!-- Work Arrangement Radio -->
+            <div class="filter-group">
+              <div class="filter-group-title">Work Arrangement</div>
+              <div class="filter-checkbox-list">
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="workArrangement" value="all" checked> All Arrangements
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="workArrangement" value="Remote"> Remote — India
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="workArrangement" value="Hybrid"> Hybrid
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="workArrangement" value="On-site"> On-site
+                </label>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right Results Section -->
+          <div class="jobs-results-content">
+            <div class="jobs-results-header">
+              <div id="results-count-display" class="results-count">
+                Showing <span>0</span> of <span>15</span> IT Opportunities
+              </div>
+
+              <div class="sort-container">
+                <label for="sort-jobs">Sort By:</label>
+                <select id="sort-jobs" class="sort-select">
+                  <option value="newest">Newest First</option>
+                  <option value="title">Job Title (A–Z)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Dynamic Container for Job Cards -->
+            <div id="jobs-grid-container" class="job-cards-grid">
+              <!-- Rendered via js/job-search.js -->
+            </div>
+
+            <!-- Load More Action -->
+            <div style="text-align: center; margin-top: 3rem;">
+              <button id="btn-load-more" class="btn btn-outline" style="border-color: #CBD5E1; color: var(--color-electric); background: #FFFFFF; display: none;">
+                Load More Opportunities
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo-link">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22,3 39,12 39,32 22,41 5,32 5,12" stroke="#477DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(71,125,255,0.08)"/>
+                <circle cx="22" cy="22" r="5" fill="#35C6E8"/>
+                <path d="M22 3L22 17M39 32L26 25M5 32L18 25" stroke="#35C6E8" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">IT TALENT &amp; TECHNOLOGY</span>
+              <span class="brand-subtitle">RECRUITMENT CONSULTANCY</span>
+            </div>
+          </div>
+          <p>TSCG Technologies portfolio demonstration project showcasing specialized IT talent acquisition, engineering specializations, and developer career opportunities.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Candidate Hub</h4>
+          <div class="footer-links">
+            <a href="jobs.html">Browse IT Jobs</a>
+            <a href="candidates.html">Candidate Registration</a>
+            <a href="candidates.html#interview-prep">Interview Preparation</a>
+            <a href="candidates.html#resume-guidance">Resume &amp; GitHub Guide</a>
+            <a href="candidates.html#faq">Candidate FAQ</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Employer Solutions</h4>
+          <div class="footer-links">
+            <a href="employers.html">Hire Tech Talent</a>
+            <a href="employers.html#permanent-hiring">Permanent Recruitment</a>
+            <a href="employers.html#contract-staffing">Contract IT Staffing</a>
+            <a href="employers.html#technical-screening">Technical Screening</a>
+            <a href="employers.html#hiring-form">Post Hiring Requirement</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specializations</h4>
+          <div class="footer-links">
+            <a href="specializations.html#software-development">Software Development</a>
+            <a href="specializations.html#frontend-development">Frontend &amp; UI</a>
+            <a href="specializations.html#backend-development">Backend &amp; Cloud</a>
+            <a href="specializations.html#ai-ml">Artificial Intelligence</a>
+            <a href="specializations.html#cybersecurity">Cybersecurity</a>
+            <a href="specializations.html">All 12 Disciplines</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Details</h4>
+          <div class="footer-links">
+            <a href="contact.html">Hiring Enquiries</a>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Mon–Sat, 9 AM–6 PM IST</span>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Phone: 0000000000</span>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Email: demo@example.com</span>
+            <span style="font-size: 0.8rem; color: #64748B; margin-top: 0.5rem; display: block;">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026–2027 IT Talent &amp; Technology Recruitment. TSCG Technologies Portfolio Demo. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <span>Illustrative Demo Only</span>
+          <span>No Data Stored</span>
+          <a href="contact.html">Privacy Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jobs-data.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/job-search.js"></script>
+</body>
+</html>

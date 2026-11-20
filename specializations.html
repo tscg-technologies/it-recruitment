@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Specializations | IT Talent &amp; Technology Recruitment</title>
+  <meta name="description" content="In-depth technical coverage across 12 core disciplines: Software Engineering, Frontend, Backend, Full-Stack, Data, AI/ML, Cloud &amp; DevOps, Cybersecurity, QA, Mobile, ERP/CRM, and Infrastructure.">
+  
+  <meta property="og:title" content="Technology Specializations | IT Talent &amp; Technology Recruitment">
+  <meta property="og:description" content="Explore our 12 deep technical recruitment specializations and matching software roles.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .spec-deep-card {
+      background: var(--color-navy);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 3rem;
+      margin-bottom: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .spec-deep-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .spec-deep-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .spec-roles-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.25rem 0 1.75rem;
+    }
+    .spec-role-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-full);
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      color: #E2E8F0;
+    }
+    .spec-actions-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .quick-subnav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 3.5rem;
+      position: sticky;
+      top: calc(var(--header-height) + 10px);
+      z-index: 90;
+      background: rgba(8, 13, 24, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 1rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+    }
+    .quick-subnav a {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      color: #94A3B8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      white-space: nowrap;
+    }
+    .quick-subnav a:hover {
+      color: #FFFFFF;
+      background: var(--color-electric-soft);
+      border-color: var(--color-cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="IT Talent &amp; Technology Recruitment Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="22,3 39,12 39,32 22,41 5,32 5,12" stroke="#477DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(71,125,255,0.08)"/>
+            <circle cx="22" cy="22" r="5" fill="#35C6E8"/>
+            <path d="M22 3L22 17M39 32L26 25M5 32L18 25" stroke="#35C6E8" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="3" r="2.5" fill="#4AC6A5"/>
+            <circle cx="39" cy="32" r="2.5" fill="#9876F5"/>
+            <circle cx="5" cy="32" r="2.5" fill="#477DFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">IT TALENT &amp; TECHNOLOGY</span>
+          <span class="brand-subtitle">RECRUITMENT CONSULTANCY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="candidates.html" class="nav-link">Candidates</a>
+        <a href="jobs.html" class="nav-link">IT Jobs</a>
+        <a href="employers.html" class="nav-link">Employers</a>
+        <a href="specializations.html" class="nav-link active">Specializations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="jobs.html" class="btn btn-sm btn-outline">Find IT Jobs</a>
+        <a href="employers.html" class="btn btn-sm btn-primary">Hire Tech Talent</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="candidates.html" class="nav-link">Candidates</a>
+      <a href="jobs.html" class="nav-link">IT Jobs</a>
+      <a href="employers.html" class="nav-link">Employers</a>
+      <a href="specializations.html" class="nav-link active">Specializations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+      <a href="jobs.html" class="btn btn-outline" style="width: 100%;">Find IT Jobs</a>
+      <a href="employers.html" class="btn btn-primary" style="width: 100%;">Hire Tech Talent</a>
+    </div>
+  </div>
+  <div class="mobile-overlay"></div>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="section" style="padding-top: calc(var(--header-height) + 3.5rem); background: radial-gradient(circle at 50% 15%, rgba(152, 118, 245, 0.15) 0%, transparent 60%), var(--color-midnight);">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="tag-label tag-label-violet">Comprehensive Technology Taxonomy</span>
+          <h1>OUR 12 CORE TECHNOLOGY SPECIALIZATIONS.</h1>
+          <p>We do not treat engineering as a single monolithic bucket. Discover our deep architectural understanding across 12 distinct technological domains.</p>
+          
+          <div class="demo-badge-bar" style="margin-top: 1.5rem;">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>TSCG TECHNOLOGIES DEMO PORTFOLIO — TECHNICAL DISCIPLINES CATALOG</span>
+          </div>
+        </div>
+
+        <!-- Sticky Quick Jump Subnav -->
+        <nav class="quick-subnav" aria-label="Specialization Quick Links">
+          <a href="#software-development">1. Software Dev</a>
+          <a href="#frontend-development">2. Frontend</a>
+          <a href="#backend-development">3. Backend</a>
+          <a href="#fullstack-development">4. Full-Stack</a>
+          <a href="#data-analytics">5. Data &amp; BI</a>
+          <a href="#ai-ml">6. AI &amp; ML</a>
+          <a href="#cloud-devops">7. Cloud &amp; DevOps</a>
+          <a href="#cybersecurity">8. Cybersecurity</a>
+          <a href="#qa-testing">9. QA &amp; Testing</a>
+          <a href="#mobile-app">10. Mobile Apps</a>
+          <a href="#erp-crm">11. ERP &amp; CRM</a>
+          <a href="#infrastructure">12. Infrastructure</a>
+        </nav>
+
+        <!-- 1. Software Development -->
+        <div id="software-development" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label">Specialization 01</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Software Development &amp; Systems Engineering</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Core software engineering focused on resilient object-oriented design, concurrent algorithmic execution, multi-threaded systems, and low-latency distributed communication.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Software Developer</span>
+                <span class="spec-role-chip">Software Engineer</span>
+                <span class="spec-role-chip">Application Developer</span>
+                <span class="spec-role-chip">Technical Lead</span>
+                <span class="spec-role-chip">Software Architect</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Java</span>
+                <span class="skill-tag skill-tag-primary">Python</span>
+                <span class="skill-tag skill-tag-primary">C#</span>
+                <span class="skill-tag skill-tag-primary">Go</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Software%20Development" class="btn btn-cyan btn-sm">Explore Software Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Software Engineers</a>
+              </div>
+            </div>
+
+            <!-- Software Development Office Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/software-development-office.jpg" alt="Software engineers building multi-threaded enterprise distributed applications" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Frontend Development -->
+        <div id="frontend-development" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-mint">Specialization 02</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Frontend Development &amp; Web Applications</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Engineering interactive, accessible client-side applications with strict Web Vitals performance, component token architectures, and rich state management.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Frontend Developer</span>
+                <span class="spec-role-chip">UI Developer</span>
+                <span class="spec-role-chip">React Developer</span>
+                <span class="spec-role-chip">Angular Developer</span>
+                <span class="spec-role-chip">Web Application Developer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">HTML5</span>
+                <span class="skill-tag skill-tag-primary">CSS3</span>
+                <span class="skill-tag skill-tag-primary">JavaScript</span>
+                <span class="skill-tag skill-tag-primary">TypeScript</span>
+                <span class="skill-tag skill-tag-primary">React</span>
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">Vue</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Frontend%20Development" class="btn btn-cyan btn-sm">Explore Frontend Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Frontend Engineers</a>
+              </div>
+            </div>
+
+            <!-- Frontend Developer Workstation Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/frontend-developer-workstation.jpg" alt="UI engineer designing accessible React component libraries on high-resolution display" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Backend Development -->
+        <div id="backend-development" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-violet">Specialization 03</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Backend Development &amp; Distributed Systems</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                High-scale server architectures, gRPC and RESTful microservices, transactional consistency, and event streaming fabrics.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Backend Developer</span>
+                <span class="spec-role-chip">API Developer</span>
+                <span class="spec-role-chip">Java Developer</span>
+                <span class="spec-role-chip">Python Developer</span>
+                <span class="spec-role-chip">.NET Developer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Node.js</span>
+                <span class="skill-tag skill-tag-primary">Python</span>
+                <span class="skill-tag skill-tag-primary">Django</span>
+                <span class="skill-tag skill-tag-primary">FastAPI</span>
+                <span class="skill-tag skill-tag-primary">Spring Boot</span>
+                <span class="skill-tag">.NET</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Backend%20Development" class="btn btn-cyan btn-sm">Explore Backend Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Backend Engineers</a>
+              </div>
+            </div>
+
+            <!-- Backend Engineering Team Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/backend-engineering-team.jpg" alt="Backend systems architects reviewing database indexing and microservices topology" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Full-Stack Development -->
+        <div id="fullstack-development" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label">Specialization 04</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Full-Stack Engineering</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Complete product lifecycle engineering bridging interactive frontend components, scalable APIs, and database migrations.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Full-Stack Developer</span>
+                <span class="spec-role-chip">MERN Developer</span>
+                <span class="spec-role-chip">MEAN Developer</span>
+                <span class="spec-role-chip">Full-Stack Engineer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">JavaScript</span>
+                <span class="skill-tag skill-tag-primary">TypeScript</span>
+                <span class="skill-tag skill-tag-primary">React</span>
+                <span class="skill-tag skill-tag-primary">Node.js</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Full-Stack%20Engineering" class="btn btn-cyan btn-sm">Explore Full-Stack Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Full-Stack Engineers</a>
+              </div>
+            </div>
+
+            <!-- Full-Stack Development Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/professional-software-developer.jpg" alt="Full-stack software engineer testing API integration with React front-end" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Data & Business Intelligence -->
+        <div id="data-analytics" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-mint">Specialization 05</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Data Analytics &amp; Data Engineering</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Lakehouse architectures, distributed PySpark pipelines, dimensional data modeling, and executive Power BI / Tableau dashboards.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Data Analyst</span>
+                <span class="spec-role-chip">Data Engineer</span>
+                <span class="spec-role-chip">BI Developer</span>
+                <span class="spec-role-chip">Power BI Developer</span>
+                <span class="spec-role-chip">Data Scientist</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">SQL</span>
+                <span class="skill-tag skill-tag-primary">Python</span>
+                <span class="skill-tag skill-tag-primary">Power BI</span>
+                <span class="skill-tag skill-tag-primary">Tableau</span>
+                <span class="skill-tag">Spark</span>
+                <span class="skill-tag">Databricks</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Data%20%26%20Business%20Intelligence" class="btn btn-cyan btn-sm">Explore Data Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Data Specialists</a>
+              </div>
+            </div>
+
+            <!-- Data Analytics Professional Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/data-analytics-professional.jpg" alt="Lead data analyst inspecting interactive business intelligence dashboards and SQL models" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. AI & Machine Learning -->
+        <div id="ai-ml" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-violet">Specialization 06</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Artificial Intelligence &amp; Machine Learning</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Production deep learning models, MLOps retraining pipelines, LLM fine-tuning, vector database indexing, and enterprise RAG agents.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">AI Engineer</span>
+                <span class="spec-role-chip">Machine Learning Engineer</span>
+                <span class="spec-role-chip">NLP Engineer</span>
+                <span class="spec-role-chip">Generative AI Engineer</span>
+                <span class="spec-role-chip">LLM Application Developer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Python</span>
+                <span class="skill-tag skill-tag-primary">PyTorch</span>
+                <span class="skill-tag skill-tag-primary">TensorFlow</span>
+                <span class="skill-tag skill-tag-primary">NLP</span>
+                <span class="skill-tag">LLMs</span>
+                <span class="skill-tag">RAG</span>
+                <span class="skill-tag">Vector DBs</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Artificial%20Intelligence%20%26%20Machine%20Learning" class="btn btn-cyan btn-sm">Explore AI/ML Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire AI Engineers</a>
+              </div>
+            </div>
+
+            <!-- Artificial Intelligence Engineer Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/artificial-intelligence-engineer.jpg" alt="AI research engineer fine-tuning neural network weights and evaluating inference latency" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Cloud & DevOps -->
+        <div id="cloud-devops" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label">Specialization 07</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Cloud Architecture &amp; DevOps Engineering</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Declarative Infrastructure-as-Code, Kubernetes cluster lifecycle, zero-downtime CI/CD deployment gates, and SRE observability.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Cloud Engineer</span>
+                <span class="spec-role-chip">DevOps Engineer</span>
+                <span class="spec-role-chip">Site Reliability Engineer (SRE)</span>
+                <span class="spec-role-chip">Cloud Architect</span>
+                <span class="spec-role-chip">Platform Engineer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">AWS</span>
+                <span class="skill-tag skill-tag-primary">Azure</span>
+                <span class="skill-tag skill-tag-primary">Google Cloud</span>
+                <span class="skill-tag skill-tag-primary">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Terraform</span>
+                <span class="skill-tag">Jenkins</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Cloud%20%26%20DevOps" class="btn btn-cyan btn-sm">Explore Cloud Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire DevOps Engineers</a>
+              </div>
+            </div>
+
+            <!-- Cloud DevOps Engineer Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/cloud-devops-engineer.jpg" alt="Site reliability engineer monitoring Kubernetes cluster telemetry and autoscaling graphs" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Cybersecurity -->
+        <div id="cybersecurity" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-mint">Specialization 08</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Cybersecurity &amp; Information Security</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                24/7 SOC incident response, threat telemetry triage, penetration testing, IAM governance, and cloud security posture defense.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Security Analyst</span>
+                <span class="spec-role-chip">SOC Analyst</span>
+                <span class="spec-role-chip">Security Engineer</span>
+                <span class="spec-role-chip">Penetration Tester</span>
+                <span class="spec-role-chip">Cloud Security Engineer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">SIEM</span>
+                <span class="skill-tag skill-tag-primary">SOC</span>
+                <span class="skill-tag skill-tag-primary">IAM</span>
+                <span class="skill-tag skill-tag-primary">Vulnerability Assessment</span>
+                <span class="skill-tag">Cloud Security</span>
+                <span class="skill-tag">Splunk</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Cybersecurity" class="btn btn-cyan btn-sm">Explore Security Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Security Specialists</a>
+              </div>
+            </div>
+
+            <!-- Cybersecurity Professional Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/cybersecurity-professional.jpg" alt="Cybersecurity threat analyst analyzing real-time network attack telemetry in security operations center" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Quality Assurance & Testing -->
+        <div id="qa-testing" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-violet">Specialization 09</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Quality Assurance &amp; SDET Automation</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Automated UI and API testing frameworks, performance stress simulations, and continuous test gating embedded in CI/CD pipelines.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">QA Engineer</span>
+                <span class="spec-role-chip">Automation Tester</span>
+                <span class="spec-role-chip">SDET</span>
+                <span class="spec-role-chip">Performance Tester</span>
+                <span class="spec-role-chip">Test Lead</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Selenium</span>
+                <span class="skill-tag skill-tag-primary">Playwright</span>
+                <span class="skill-tag skill-tag-primary">Cypress</span>
+                <span class="skill-tag skill-tag-primary">API Testing</span>
+                <span class="skill-tag">JMeter</span>
+                <span class="skill-tag">TestNG</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Quality%20Assurance%20%26%20Testing" class="btn btn-cyan btn-sm">Explore QA Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire QA Engineers</a>
+              </div>
+            </div>
+
+            <!-- QA Automation Engineer Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/qa-automation-engineer.jpg" alt="Lead SDET writing end-to-end Playwright automated test scripts and analyzing test runs" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Mobile Application Development -->
+        <div id="mobile-app" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label">Specialization 10</span>
+              <h2 style="margin: 0.5rem 0 1rem;">Mobile Application Development</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Native and cross-platform mobile apps for iOS and Android, focusing on 60fps animations, memory profiling, and offline caching.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">Android Developer</span>
+                <span class="spec-role-chip">iOS Developer</span>
+                <span class="spec-role-chip">Flutter Developer</span>
+                <span class="spec-role-chip">React Native Developer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Kotlin</span>
+                <span class="skill-tag skill-tag-primary">Swift</span>
+                <span class="skill-tag skill-tag-primary">Flutter</span>
+                <span class="skill-tag skill-tag-primary">Dart</span>
+                <span class="skill-tag">React Native</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=Mobile%20App%20Development" class="btn btn-cyan btn-sm">Explore Mobile Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Mobile Developers</a>
+              </div>
+            </div>
+
+            <!-- Mobile App Developer Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/mobile-app-developer.jpg" alt="Mobile application engineer profiling real-time cross-platform animations across mobile test devices" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. ERP & CRM -->
+        <div id="erp-crm" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-mint">Specialization 11</span>
+              <h2 style="margin: 0.5rem 0 1rem;">ERP &amp; CRM Enterprise Platforms</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Custom enterprise software platforms, Salesforce Lightning Web Components, Apex triggers, ServiceNow workflows, and SAP S/4HANA migrations.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">SAP Consultant</span>
+                <span class="spec-role-chip">Salesforce Developer</span>
+                <span class="spec-role-chip">Salesforce Administrator</span>
+                <span class="spec-role-chip">ServiceNow Developer</span>
+                <span class="spec-role-chip">Oracle Consultant</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Salesforce Apex</span>
+                <span class="skill-tag skill-tag-primary">LWC</span>
+                <span class="skill-tag skill-tag-primary">SAP ABAP</span>
+                <span class="skill-tag skill-tag-primary">SAP Fiori</span>
+                <span class="skill-tag">ServiceNow</span>
+                <span class="skill-tag">Oracle Cloud</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=ERP%20%26%20CRM" class="btn btn-cyan btn-sm">Explore ERP/CRM Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Enterprise Consultants</a>
+              </div>
+            </div>
+
+            <!-- Enterprise Technology Consultation Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/enterprise-technology-consultation.jpg" alt="Enterprise systems solution architect configuring custom Salesforce and SAP integrations" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. IT Infrastructure & Support -->
+        <div id="infrastructure" class="spec-deep-card reveal-on-scroll">
+          <div class="spec-deep-grid">
+            <div>
+              <span class="tag-label tag-label-violet">Specialization 12</span>
+              <h2 style="margin: 0.5rem 0 1rem;">IT Infrastructure &amp; Systems Administration</h2>
+              <p style="font-size: 1rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 1.25rem;">
+                Foundational system reliability, Linux kernel tuning, Cisco networking, virtualization, and enterprise directory services.
+              </p>
+              
+              <div class="mono-accent" style="color: var(--color-cyan);">Key Roles:</div>
+              <div class="spec-roles-list">
+                <span class="spec-role-chip">System Administrator</span>
+                <span class="spec-role-chip">Network Engineer</span>
+                <span class="spec-role-chip">IT Support Engineer</span>
+                <span class="spec-role-chip">Infrastructure Engineer</span>
+                <span class="spec-role-chip">Technical Support Engineer</span>
+              </div>
+
+              <div class="mono-accent" style="color: var(--color-mint);">Primary Technologies:</div>
+              <div class="hero-floating-tags" style="margin: 0.75rem 0 1.5rem;">
+                <span class="skill-tag skill-tag-primary">Linux</span>
+                <span class="skill-tag skill-tag-primary">Windows Server</span>
+                <span class="skill-tag skill-tag-primary">Cisco Networking</span>
+                <span class="skill-tag skill-tag-primary">Active Directory</span>
+                <span class="skill-tag">VMware</span>
+                <span class="skill-tag">Office 365</span>
+              </div>
+
+              <div class="spec-actions-row">
+                <a href="jobs.html?specialization=IT%20Infrastructure" class="btn btn-cyan btn-sm">Explore Infrastructure Roles</a>
+                <a href="employers.html#hiring-form" class="btn btn-outline btn-sm">Hire Infrastructure Engineers</a>
+              </div>
+            </div>
+
+            <!-- IT Infrastructure & Systems Administration Image -->
+            <div class="site-img-wrapper aspect-16-9">
+              <img src="images/technical-interview.jpg" alt="Systems administrator reviewing server virtualization, network switches, and edge infrastructure" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo-link">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22,3 39,12 39,32 22,41 5,32 5,12" stroke="#477DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(71,125,255,0.08)"/>
+                <circle cx="22" cy="22" r="5" fill="#35C6E8"/>
+                <path d="M22 3L22 17M39 32L26 25M5 32L18 25" stroke="#35C6E8" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">IT TALENT &amp; TECHNOLOGY</span>
+              <span class="brand-subtitle">RECRUITMENT CONSULTANCY</span>
+            </div>
+          </div>
+          <p>TSCG Technologies portfolio demonstration project showcasing specialized IT talent acquisition, engineering specializations, and developer career opportunities.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Candidate Hub</h4>
+          <div class="footer-links">
+            <a href="jobs.html">Browse IT Jobs</a>
+            <a href="candidates.html">Candidate Registration</a>
+            <a href="candidates.html#interview-prep">Interview Preparation</a>
+            <a href="candidates.html#resume-guidance">Resume &amp; GitHub Guide</a>
+            <a href="candidates.html#faq">Candidate FAQ</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Employer Solutions</h4>
+          <div class="footer-links">
+            <a href="employers.html">Hire Tech Talent</a>
+            <a href="employers.html#permanent-hiring">Permanent Recruitment</a>
+            <a href="employers.html#contract-staffing">Contract IT Staffing</a>
+            <a href="employers.html#technical-screening">Technical Screening</a>
+            <a href="employers.html#hiring-form">Post Hiring Requirement</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specializations</h4>
+          <div class="footer-links">
+            <a href="specializations.html#software-development">Software Development</a>
+            <a href="specializations.html#frontend-development">Frontend &amp; UI</a>
+            <a href="specializations.html#backend-development">Backend &amp; Cloud</a>
+            <a href="specializations.html#ai-ml">Artificial Intelligence</a>
+            <a href="specializations.html#cybersecurity">Cybersecurity</a>
+            <a href="specializations.html">All 12 Disciplines</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Details</h4>
+          <div class="footer-links">
+            <a href="contact.html">Hiring Enquiries</a>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Mon–Sat, 9 AM–6 PM IST</span>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Phone: 0000000000</span>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Email: demo@example.com</span>
+            <span style="font-size: 0.8rem; color: #64748B; margin-top: 0.5rem; display: block;">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026–2027 IT Talent &amp; Technology Recruitment. TSCG Technologies Portfolio Demo. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <span>Illustrative Demo Only</span>
+          <span>No Data Stored</span>
+          <a href="contact.html">Privacy Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

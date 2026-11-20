@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Talent & Technology Recruitment | Specialist Tech Talent Acquisition</title>
+  <meta name="description" content="Specialist IT recruitment consultancy and technology talent platform connecting software engineers, data specialists, AI engineers, and cloud architects with innovative teams.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="IT Talent & Technology Recruitment | Specialist Tech Talent Acquisition">
+  <meta property="og:description" content="Premium technology recruitment solutions across software engineering, cloud, data, AI, cybersecurity, and enterprise systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Section 1: Premium Navigation
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="IT Talent & Technology Recruitment Home">
+        <div class="brand-symbol">
+          <!-- Original Abstract Geometric Technology Nexus Logo -->
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="22,3 39,12 39,32 22,41 5,32 5,12" stroke="#477DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(71,125,255,0.08)"/>
+            <circle cx="22" cy="22" r="5" fill="#35C6E8"/>
+            <path d="M22 3L22 17M39 32L26 25M5 32L18 25" stroke="#35C6E8" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="3" r="2.5" fill="#4AC6A5"/>
+            <circle cx="39" cy="32" r="2.5" fill="#9876F5"/>
+            <circle cx="5" cy="32" r="2.5" fill="#477DFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">IT TALENT &amp; TECHNOLOGY</span>
+          <span class="brand-subtitle">RECRUITMENT CONSULTANCY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="candidates.html" class="nav-link">Candidates</a>
+     
+        <a href="employers.html" class="nav-link">Employers</a>
+        <a href="specializations.html" class="nav-link">Specializations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+    
+        <a href="employers.html" class="btn btn-sm btn-primary">Hire Tech Talent</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="candidates.html" class="nav-link">Candidates</a>
+      <a href="jobs.html" class="nav-link">IT Jobs</a>
+      <a href="employers.html" class="nav-link">Employers</a>
+      <a href="specializations.html" class="nav-link">Specializations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+      <a href="jobs.html" class="btn btn-outline" style="width: 100%;">Find IT Jobs</a>
+      <a href="employers.html" class="btn btn-primary" style="width: 100%;">Hire Tech Talent</a>
+    </div>
+  </div>
+  <div class="mobile-overlay"></div>
+
+  <main id="main-content">
+
+    <!-- =======================================================================
+         Section 2: Technology Recruitment Hero
+         ======================================================================= -->
+    <section class="hero">
+      <canvas id="hero-canvas" class="hero-canvas"></canvas>
+      <div class="container hero-content-wrapper">
+        <div class="hero-headline-block reveal-on-scroll">
+          <span class="tag-label">Specialist Technology Talent Acquisition</span>
+          <h1>CONNECTING GREAT TECH TALENT WITH THE TEAMS BUILDING TOMORROW.</h1>
+          <p>Explore technology careers and discover specialist recruitment solutions across software engineering, data, AI, cloud, cybersecurity, and enterprise technology.</p>
+          
+          <div class="demo-badge-bar" style="margin-top: 2rem;">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>TSCG TECHNOLOGIES DEMO PORTFOLIO — ILLUSTRATIVE RECRUITMENT PLATFORM</span>
+          </div>
+        </div>
+
+        <!-- Split Audience Experience -->
+        <div class="hero-split-grid">
+          <!-- Candidate Path -->
+          <div class="hero-audience-card candidate-path reveal-on-scroll">
+            <div class="hero-card-header">
+              <span class="tag-label">Candidate Experience</span>
+              <h2>YOUR NEXT TECH ROLE STARTS HERE.</h2>
+              <p>Discover technology opportunities that match your skills, experience, and ambitions across premier tech hubs.</p>
+            </div>
+
+            <!-- Mini Job Opportunity Highlight -->
+            <div class="hero-mini-job">
+              <div class="mini-job-info">
+                <h4>Senior Python Systems Developer</h4>
+                <div class="mini-job-meta">FastAPI • PostgreSQL • Redis • Hybrid</div>
+              </div>
+              <span class="skill-tag skill-tag-primary">IT001</span>
+            </div>
+
+            <div class="hero-floating-tags">
+              <span class="hero-tag">Python</span>
+              <span class="hero-tag">React</span>
+              <span class="hero-tag">Java</span>
+              <span class="hero-tag">AWS</span>
+              <span class="hero-tag">AI/ML</span>
+              <span class="hero-tag">Kubernetes</span>
+            </div>
+
+            <a href="jobs.html" class="btn btn-cyan">
+              Explore IT Jobs
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+
+          <!-- Employer Path -->
+          <div class="hero-audience-card employer-path reveal-on-scroll">
+            <div class="hero-card-header">
+              <span class="tag-label tag-label-mint">Employer Experience</span>
+              <h2>BUILD YOUR NEXT GREAT TECH TEAM.</h2>
+              <p>Connect with technology professionals across today's most in-demand technical disciplines with expert screening.</p>
+            </div>
+
+            <div class="hero-floating-tags">
+              <span class="hero-tag">Software Engineering</span>
+              <span class="hero-tag">Cloud &amp; DevOps</span>
+              <span class="hero-tag">Data Lakehouses</span>
+              <span class="hero-tag">SOC Defense</span>
+              <span class="hero-tag">Generative AI</span>
+              <span class="hero-tag">Enterprise ERP</span>
+            </div>
+
+            <!-- Hero Talent Network Image -->
+            <div class="site-img-wrapper aspect-16-9" style="margin: 1.5rem 0 2rem; max-height: 180px;">
+              <img src="images/hero-it-talent-network.jpg" alt="Cinematic collaborative engineering team solving architecture problems" loading="eager" width="1280" height="720">
+            </div>
+
+            <a href="employers.html" class="btn btn-mint">
+              Hire Technology Talent
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 3: Quick IT Job Search
+         ======================================================================= -->
+    <section class="section quick-search-section">
+      <div class="container">
+        <div class="search-box-card reveal-on-scroll">
+          <form id="home-quick-search-form" class="quick-search-form" action="jobs.html" method="GET">
+            <div class="form-field">
+              <label for="quick-keyword" class="form-label">Job Title / Keyword</label>
+              <input type="text" id="quick-keyword" name="keyword" class="form-input" placeholder="e.g. Systems Engineer, Architect">
+            </div>
+
+            <div class="form-field">
+              <label for="quick-technology" class="form-label">Technology / Skill</label>
+              <input type="text" id="quick-technology" name="technology" class="form-input" placeholder="e.g. Python, React, AWS">
+            </div>
+
+            <div class="form-field">
+              <label for="quick-location" class="form-label">Location</label>
+              <select id="quick-location" name="location" class="form-select">
+                <option value="all">All Locations</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Remote">Remote — India</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="quick-experience" class="form-label">Experience</label>
+              <select id="quick-experience" name="experience" class="form-select">
+                <option value="all">All Levels</option>
+                <option value="0-2">0–2 Years (Associate)</option>
+                <option value="2-5">2–5 Years (Mid-Level)</option>
+                <option value="5-8">5–8 Years (Senior)</option>
+                <option value="8+">8+ Years (Lead / Principal)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="height: 48px;">
+              Search Tech Jobs
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+          </form>
+
+          <div class="quick-search-pills">
+            <span class="pills-title">Popular Skills:</span>
+            <button type="button" class="quick-pill" data-tech="Python">Python</button>
+            <button type="button" class="quick-pill" data-tech="React">React</button>
+            <button type="button" class="quick-pill" data-tech="Java">Java</button>
+            <button type="button" class="quick-pill" data-tech="AWS">AWS</button>
+            <button type="button" class="quick-pill" data-tech="Power BI">Power BI</button>
+            <button type="button" class="quick-pill" data-tech="Kubernetes">Kubernetes</button>
+            <button type="button" class="quick-pill" data-tech="Salesforce">Salesforce</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 4: Technology Specializations Overview
+         ======================================================================= -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="tag-label">Specialist Domains</span>
+          <h2>RECRUITMENT BUILT ON DEEP TECHNICAL UNDERSTANDING.</h2>
+          <p>We speak the language of code, distributed infrastructure, and modern data architectures. Explore our core technical specializations.</p>
+        </div>
+
+        <div class="spec-grid">
+          <!-- 1. Software Development -->
+          <div class="spec-card reveal-on-scroll">
+            <div>
+              <div class="spec-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+              </div>
+              <h3>Software Development</h3>
+              <p>Core software engineers, application architects, and system developers building scalable digital systems.</p>
+              <div class="spec-tech-pills">
+                <span class="tech-mini-pill">Java</span>
+                <span class="tech-mini-pill">Python</span>
+                <span class="tech-mini-pill">C#</span>
+                <span class="tech-mini-pill">Go</span>
+                <span class="tech-mini-pill">TypeScript</span>
+              </div>
+            </div>
+            <div class="spec-card-footer">
+              <a href="specializations.html#software-development" class="link-arrow">
+                Explore Opportunities
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Frontend Development -->
+          <div class="spec-card reveal-on-scroll">
+            <div>
+              <div class="spec-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <h3>Frontend Development</h3>
+              <p>UI developers, React specialists, and client-side engineers obsessed with Web Vitals, accessibility, and fidelity.</p>
+              <div class="spec-tech-pills">
+                <span class="tech-mini-pill">React</span>
+                <span class="tech-mini-pill">TypeScript</span>
+                <span class="tech-mini-pill">Next.js</span>
+                <span class="tech-mini-pill">Angular</span>
+                <span class="tech-mini-pill">Vue</span>
+              </div>
+            </div>
+            <div class="spec-card-footer">
+              <a href="specializations.html#frontend-development" class="link-arrow">
+                Explore Opportunities
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Backend Development -->
+          <div class="spec-card reveal-on-scroll">
+            <div>
+              <div class="spec-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+              </div>
+              <h3>Backend Development</h3>
+              <p>Distributed microservices, gRPC &amp; RESTful API architects, and event streaming systems engineers.</p>
+              <div class="spec-tech-pills">
+                <span class="tech-mini-pill">Node.js</span>
+                <span class="tech-mini-pill">Spring Boot</span>
+                <span class="tech-mini-pill">FastAPI</span>
+                <span class="tech-mini-pill">.NET</span>
+                <span class="tech-mini-pill">Kafka</span>
+              </div>
+            </div>
+            <div class="spec-card-footer">
+              <a href="specializations.html#backend-development" class="link-arrow">
+                Explore Opportunities
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Full-Stack Engineering -->
+          <div class="spec-card reveal-on-scroll">
+            <div>
+              <div class="spec-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+              </div>
+              <h3>Full-Stack Engineering</h3>
+              <p>Versatile engineers driving product features from database schema design to responsive client interfaces.</p>
+              <div class="spec-tech-pills">
+                <span class="tech-mini-pill">MERN</span>
+                <span class="tech-mini-pill">TypeScript</span>
+                <span class="tech-mini-pill">GraphQL</span>
+                <span class="tech-mini-pill">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="spec-card-footer">
+              <a href="specializations.html#fullstack-development" class="link-arrow">
+                Explore Opportunities
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Data Analytics & Engineering -->
+          <div class="spec-card reveal-on-scroll">
+            <div>
+              <div class="spec-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+              </div>
+              <h3>Data Analytics &amp; Engineering</h3>
+              <p>Lakehouse architects, PySpark data pipeline specialists, and Power BI / Tableau visual intelligence analysts.</p>
+              <div class="spec-tech-pills">
+                <span class="tech-mini-pill">Spark</span>
+                <span class="tech-mini-pill">Databricks</span>
+                <span class="tech-mini-pill">Power BI</span>
+                <span class="tech-mini-pill">SQL</span>
+                <span class="tech-mini-pill">Fabric</span>
+              </div>
+            </div>
+            <div class="spec-card-footer">
+              <a href="specializations.html#data-analytics" class="link-arrow">
+                Explore Opportunities
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Artificial Intelligence & Machine Learning -->
+          <div class="spec-card reveal-on-scroll">
+            <div>
+              <div class="spec-icon-wrapper">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <h3>Artificial Intelligence &amp; ML</h3>
+              <p>Applied ML engineers, MLOps practitioners, and Generative AI specialists building production RAG systems.</p>
+              <div class="spec-tech-pills">
+                <span class="tech-mini-pill">PyTorch</span>
+                <span class="tech-mini-pill">LLMs</span>
+                <span class="tech-mini-pill">LangChain</span>
+                <span class="tech-mini-pill">MLOps</span>
+                <span class="tech-mini-pill">Vector DBs</span>
+              </div>
+            </div>
+            <div class="spec-card-footer">
+              <a href="specializations.html#ai-ml" class="link-arrow">
+                Explore Opportunities
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="specializations.html" class="btn btn-outline">
+            View All 12 Technology Specializations
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 5: Featured IT Opportunities
+         ======================================================================= -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="tag-label" style="background: #E0E7FF; color: #3730A3; border-color: #C7D2FE;">Featured Positions</span>
+          <h2>CURATED OPPORTUNITIES IN TECHNOLOGY.</h2>
+          <p>Explore representative roles across top technology organizations and engineering hubs.</p>
+          
+          <div class="demo-badge-bar demo-banner-light" style="margin-top: 1.25rem;">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <strong>DEMO JOB LISTINGS — THESE ARE ILLUSTRATIVE EXAMPLES, NOT VERIFIED LIVE VACANCIES.</strong>
+          </div>
+        </div>
+
+        <!-- 6 Illustrative Demo Job Cards rendered directly -->
+        <div class="job-cards-grid">
+          <!-- Job 1 -->
+          <article class="job-card reveal-on-scroll">
+            <div class="job-card-header">
+              <span class="job-category-badge">Software Development</span>
+              <h3 class="job-card-title"><a href="job-details.html?id=IT001">Senior Python Systems Developer</a></h3>
+              <div class="job-card-meta">
+                <span class="meta-item">Bengaluru</span>
+                <span class="meta-item">5–8 Years</span>
+                <span class="meta-item">Hybrid</span>
+              </div>
+            </div>
+            <div class="job-skills-container">
+              <span class="skill-tag skill-tag-primary">Python</span>
+              <span class="skill-tag skill-tag-primary">FastAPI</span>
+              <span class="skill-tag skill-tag-primary">PostgreSQL</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Redis</span>
+            </div>
+            <div class="job-card-footer">
+              <div class="salary-tag">₹24 - ₹32 LPA <small>Illustrative Benchmark</small></div>
+              <a href="job-details.html?id=IT001" class="btn btn-sm btn-primary">View Job</a>
+            </div>
+          </article>
+
+          <!-- Job 2 -->
+          <article class="job-card reveal-on-scroll">
+            <div class="job-card-header">
+              <span class="job-category-badge">Frontend Development</span>
+              <h3 class="job-card-title"><a href="job-details.html?id=IT002">React Frontend Engineer</a></h3>
+              <div class="job-card-meta">
+                <span class="meta-item">Hyderabad</span>
+                <span class="meta-item">2–5 Years</span>
+                <span class="meta-item">Remote — India</span>
+              </div>
+            </div>
+            <div class="job-skills-container">
+              <span class="skill-tag skill-tag-primary">React</span>
+              <span class="skill-tag skill-tag-primary">TypeScript</span>
+              <span class="skill-tag skill-tag-primary">Next.js</span>
+              <span class="skill-tag">Tailwind</span>
+            </div>
+            <div class="job-card-footer">
+              <div class="salary-tag">₹14 - ₹20 LPA <small>Illustrative Benchmark</small></div>
+              <a href="job-details.html?id=IT002" class="btn btn-sm btn-primary">View Job</a>
+            </div>
+          </article>
+
+          <!-- Job 3 -->
+          <article class="job-card reveal-on-scroll">
+            <div class="job-card-header">
+              <span class="job-category-badge">Backend Development</span>
+              <h3 class="job-card-title"><a href="job-details.html?id=IT003">Lead Java Microservices Engineer</a></h3>
+              <div class="job-card-meta">
+                <span class="meta-item">Pune</span>
+                <span class="meta-item">8+ Years</span>
+                <span class="meta-item">Hybrid</span>
+              </div>
+            </div>
+            <div class="job-skills-container">
+              <span class="skill-tag skill-tag-primary">Java</span>
+              <span class="skill-tag skill-tag-primary">Spring Boot</span>
+              <span class="skill-tag skill-tag-primary">Microservices</span>
+              <span class="skill-tag">Kafka</span>
+            </div>
+            <div class="job-card-footer">
+              <div class="salary-tag">₹32 - ₹42 LPA <small>Illustrative Benchmark</small></div>
+              <a href="job-details.html?id=IT003" class="btn btn-sm btn-primary">View Job</a>
+            </div>
+          </article>
+
+          <!-- Job 4 -->
+          <article class="job-card reveal-on-scroll">
+            <div class="job-card-header">
+              <span class="job-category-badge">Cloud &amp; DevOps</span>
+              <h3 class="job-card-title"><a href="job-details.html?id=IT004">AWS Cloud Infrastructure &amp; DevOps</a></h3>
+              <div class="job-card-meta">
+                <span class="meta-item">Chennai</span>
+                <span class="meta-item">2–5 Years</span>
+                <span class="meta-item">On-site</span>
+              </div>
+            </div>
+            <div class="job-skills-container">
+              <span class="skill-tag skill-tag-primary">AWS</span>
+              <span class="skill-tag skill-tag-primary">Kubernetes</span>
+              <span class="skill-tag skill-tag-primary">Terraform</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+            <div class="job-card-footer">
+              <div class="salary-tag">₹16 - ₹22 LPA <small>Illustrative Benchmark</small></div>
+              <a href="job-details.html?id=IT004" class="btn btn-sm btn-primary">View Job</a>
+            </div>
+          </article>
+
+          <!-- Job 5 -->
+          <article class="job-card reveal-on-scroll">
+            <div class="job-card-header">
+              <span class="job-category-badge">Data &amp; BI</span>
+              <h3 class="job-card-title"><a href="job-details.html?id=IT005">Senior Data Engineer</a></h3>
+              <div class="job-card-meta">
+                <span class="meta-item">Bengaluru</span>
+                <span class="meta-item">5–8 Years</span>
+                <span class="meta-item">Remote — India</span>
+              </div>
+            </div>
+            <div class="job-skills-container">
+              <span class="skill-tag skill-tag-primary">Python</span>
+              <span class="skill-tag skill-tag-primary">Spark</span>
+              <span class="skill-tag skill-tag-primary">Databricks</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+            <div class="job-card-footer">
+              <div class="salary-tag">₹26 - ₹35 LPA <small>Illustrative Benchmark</small></div>
+              <a href="job-details.html?id=IT005" class="btn btn-sm btn-primary">View Job</a>
+            </div>
+          </article>
+
+          <!-- Job 6 -->
+          <article class="job-card reveal-on-scroll">
+            <div class="job-card-header">
+              <span class="job-category-badge">Artificial Intelligence</span>
+              <h3 class="job-card-title"><a href="job-details.html?id=IT006">Enterprise Machine Learning Engineer</a></h3>
+              <div class="job-card-meta">
+                <span class="meta-item">Hyderabad</span>
+                <span class="meta-item">2–5 Years</span>
+                <span class="meta-item">Hybrid</span>
+              </div>
+            </div>
+            <div class="job-skills-container">
+              <span class="skill-tag skill-tag-primary">Python</span>
+              <span class="skill-tag skill-tag-primary">PyTorch</span>
+              <span class="skill-tag skill-tag-primary">MLOps</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+            <div class="job-card-footer">
+              <div class="salary-tag">₹18 - ₹28 LPA <small>Illustrative Benchmark</small></div>
+              <a href="job-details.html?id=IT006" class="btn btn-sm btn-primary">View Job</a>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="jobs.html" class="btn btn-lg btn-primary">
+            Explore All 15 Demo Vacancies
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 6: Technology Stack Cloud
+         ======================================================================= -->
+    <section class="section tech-cloud-section">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="tag-label">Ecosystem Explorer</span>
+          <h2>THE MODERN TECHNOLOGY STACK ECOSYSTEM.</h2>
+          <p>Discover roles and talent across languages, frameworks, cloud primitives, and enterprise platforms. Select a category to explore relevant technologies.</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="tech-category-tabs reveal-on-scroll">
+          <button type="button" class="tech-tab-btn active" data-category="all">All Technologies</button>
+          <button type="button" class="tech-tab-btn" data-category="programming">Programming Languages</button>
+          <button type="button" class="tech-tab-btn" data-category="frontend">Frontend</button>
+          <button type="button" class="tech-tab-btn" data-category="backend">Backend</button>
+          <button type="button" class="tech-tab-btn" data-category="databases">Databases</button>
+          <button type="button" class="tech-tab-btn" data-category="cloud">Cloud</button>
+          <button type="button" class="tech-tab-btn" data-category="devops">DevOps</button>
+          <button type="button" class="tech-tab-btn" data-category="data">Data &amp; BI</button>
+          <button type="button" class="tech-tab-btn" data-category="ai">AI &amp; ML</button>
+          <button type="button" class="tech-tab-btn" data-category="security">Cybersecurity</button>
+          <button type="button" class="tech-tab-btn" data-category="enterprise">Enterprise Platforms</button>
+        </div>
+
+        <!-- Chips Grid -->
+        <div class="tech-cloud-grid reveal-on-scroll">
+          <!-- Programming -->
+          <div class="tech-chip tech-chip-item" data-category="programming" data-skill="Python">
+            <span>Python</span><span class="chip-category">Lang</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="programming" data-skill="Java">
+            <span>Java</span><span class="chip-category">Lang</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="programming" data-skill="TypeScript">
+            <span>TypeScript</span><span class="chip-category">Lang</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="programming" data-skill="C#">
+            <span>C#</span><span class="chip-category">Lang</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="programming" data-skill="Go">
+            <span>Go</span><span class="chip-category">Lang</span>
+          </div>
+
+          <!-- Frontend -->
+          <div class="tech-chip tech-chip-item" data-category="frontend" data-skill="React">
+            <span>React</span><span class="chip-category">Frontend</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="frontend" data-skill="Angular">
+            <span>Angular</span><span class="chip-category">Frontend</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="frontend" data-skill="Next.js">
+            <span>Next.js</span><span class="chip-category">Frontend</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="frontend" data-skill="Tailwind CSS">
+            <span>Tailwind CSS</span><span class="chip-category">Frontend</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="tech-chip tech-chip-item" data-category="backend" data-skill="Node.js">
+            <span>Node.js</span><span class="chip-category">Backend</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="backend" data-skill="Spring Boot">
+            <span>Spring Boot</span><span class="chip-category">Backend</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="backend" data-skill="FastAPI">
+            <span>FastAPI</span><span class="chip-category">Backend</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="backend" data-skill=".NET">
+            <span>.NET</span><span class="chip-category">Backend</span>
+          </div>
+
+          <!-- Databases -->
+          <div class="tech-chip tech-chip-item" data-category="databases" data-skill="PostgreSQL">
+            <span>PostgreSQL</span><span class="chip-category">DB</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="databases" data-skill="Redis">
+            <span>Redis</span><span class="chip-category">Cache</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="databases" data-skill="MongoDB">
+            <span>MongoDB</span><span class="chip-category">NoSQL</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="databases" data-skill="SQL Server">
+            <span>SQL Server</span><span class="chip-category">RDBMS</span>
+          </div>
+
+          <!-- Cloud -->
+          <div class="tech-chip tech-chip-item" data-category="cloud" data-skill="AWS">
+            <span>AWS</span><span class="chip-category">Cloud</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="cloud" data-skill="Azure">
+            <span>Azure</span><span class="chip-category">Cloud</span>
+          </div>
+
+          <!-- DevOps -->
+          <div class="tech-chip tech-chip-item" data-category="devops" data-skill="Docker">
+            <span>Docker</span><span class="chip-category">DevOps</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="devops" data-skill="Kubernetes">
+            <span>Kubernetes</span><span class="chip-category">DevOps</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="devops" data-skill="Terraform">
+            <span>Terraform</span><span class="chip-category">IaC</span>
+          </div>
+
+          <!-- Data -->
+          <div class="tech-chip tech-chip-item" data-category="data" data-skill="Spark">
+            <span>Spark</span><span class="chip-category">Data</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="data" data-skill="Databricks">
+            <span>Databricks</span><span class="chip-category">Data</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="data" data-skill="Power BI">
+            <span>Power BI</span><span class="chip-category">BI</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="data" data-skill="Microsoft Fabric">
+            <span>Microsoft Fabric</span><span class="chip-category">Lakehouse</span>
+          </div>
+
+          <!-- AI -->
+          <div class="tech-chip tech-chip-item" data-category="ai" data-skill="PyTorch">
+            <span>PyTorch</span><span class="chip-category">AI/ML</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="ai" data-skill="LLMs">
+            <span>LLMs &amp; RAG</span><span class="chip-category">GenAI</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="ai" data-skill="Vector DBs">
+            <span>Vector DBs</span><span class="chip-category">GenAI</span>
+          </div>
+
+          <!-- Security -->
+          <div class="tech-chip tech-chip-item" data-category="security" data-skill="SIEM">
+            <span>SIEM / SOC</span><span class="chip-category">Sec</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="security" data-skill="Incident Response">
+            <span>Incident Response</span><span class="chip-category">Sec</span>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="tech-chip tech-chip-item" data-category="enterprise" data-skill="Salesforce">
+            <span>Salesforce</span><span class="chip-category">CRM</span>
+          </div>
+          <div class="tech-chip tech-chip-item" data-category="enterprise" data-skill="SAP">
+            <span>SAP</span><span class="chip-category">ERP</span>
+          </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.825rem; color: #64748B;">
+          * Illustrative technology taxonomy demonstration for the TSCG Technologies recruitment portfolio.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 7: How IT Recruitment Works (Dual Workflows)
+         ======================================================================= -->
+    <section class="section section-navy">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="tag-label">Methodology</span>
+          <h2>A DISCIPLINED TECHNICAL RECRUITMENT JOURNEY.</h2>
+          <p>Transparent, structured coordination designed specifically for modern engineering teams and technical candidates.</p>
+        </div>
+
+        <div class="workflows-tabs-container reveal-on-scroll">
+          <div class="workflow-pill-toggle">
+            <button type="button" class="workflow-toggle-btn active" data-workflow="candidate">Candidate Journey</button>
+            <button type="button" class="workflow-toggle-btn" data-workflow="employer">Employer Journey</button>
+          </div>
+        </div>
+
+        <!-- Candidate Timeline -->
+        <div id="workflow-candidate-timeline" class="workflow-timeline reveal-on-scroll">
+          <div class="workflow-step-card">
+            <div class="step-number">01</div>
+            <h3>Discover Roles</h3>
+            <p>Explore opportunities matching your primary programming language, experience, and remote/hybrid preference.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">02</div>
+            <h3>Share Profile</h3>
+            <p>Submit your verified technical stack, GitHub repositories, and system design background.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">03</div>
+            <h3>Initial Review</h3>
+            <p>Technical recruiters evaluate architecture alignment, production depth, and communication skills.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">04</div>
+            <h3>Interview Coordination</h3>
+            <p>Structured preparation for live coding sessions, system design rounds, and hiring manager syncs.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">05</div>
+            <h3>Hiring Process</h3>
+            <p>Compensation alignment, transparent feedback, offer negotiation, and onboarding guidance.</p>
+          </div>
+        </div>
+
+        <!-- Employer Timeline -->
+        <div id="workflow-employer-timeline" class="workflow-timeline" style="display: none;">
+          <div class="workflow-step-card">
+            <div class="step-number">01</div>
+            <h3>Share Requirements</h3>
+            <p>Detail your architecture stack, concurrency expectations, team culture, and hiring timeline.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">02</div>
+            <h3>Define Skill Matrix</h3>
+            <p>Calibrate must-have libraries versus nice-to-have competencies and required experience tiers.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">03</div>
+            <h3>Candidate Sourcing</h3>
+            <p>Targeted outreach to active and passive developers with verified production track records.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">04</div>
+            <h3>Screening Coordination</h3>
+            <p>Pre-vetted shortlists with technical assessment summaries and GitHub portfolio notes.</p>
+          </div>
+          <div class="workflow-step-card">
+            <div class="step-number">05</div>
+            <h3>Hiring Coordination</h3>
+            <p>Streamlined interview logistics, reference checks, and offer closure with high retention.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 2.5rem; font-size: 0.8rem; color: #64748B;">
+          * Illustrative workflow. In accordance with portfolio standards, placements and hiring outcomes are not guaranteed.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 8: Talent Matching Visualization (Interactive)
+         ======================================================================= -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="tag-label">Conceptual Architecture</span>
+          <h2>PRECISION TALENT MATCHING MATRIX.</h2>
+          <p>Connecting developer core skills with domain architectures and specific engineering roles.</p>
+        </div>
+
+        <div class="matching-viz-box reveal-on-scroll">
+          <p class="mono-accent" style="text-align: center; color: var(--color-cyan); margin-bottom: 0.5rem;">Interactive Demonstration — Click Any Core Skill Below:</p>
+
+          <div class="viz-diagram-container">
+            <!-- Col 1: Candidate Skills -->
+            <div class="viz-column">
+              <div class="viz-column-title">01 • Candidate Core Skill</div>
+              <div class="viz-node viz-node-skill active" data-skill="Python">Python &amp; Asyncio</div>
+              <div class="viz-node viz-node-skill" data-skill="React / TypeScript">React &amp; TypeScript</div>
+              <div class="viz-node viz-node-skill" data-skill="AWS / Kubernetes">AWS &amp; Kubernetes</div>
+              <div class="viz-node viz-node-skill" data-skill="Java / Spring Boot">Java &amp; Spring Boot</div>
+              <div class="viz-node viz-node-skill" data-skill="SIEM / SOC">SIEM &amp; Threat Defense</div>
+            </div>
+
+            <!-- Arrow Col 1 -->
+            <div class="viz-arrow-col">➔</div>
+
+            <!-- Col 2: Technology Discipline -->
+            <div class="viz-column">
+              <div class="viz-column-title">02 • Technical Discipline</div>
+              <div id="viz-discipline-node" class="viz-node" style="border-color: var(--color-cyan); color: var(--color-cyan); font-weight: 700;">
+                Data &amp; AI Systems
+              </div>
+            </div>
+
+            <!-- Arrow Col 2 -->
+            <div class="viz-arrow-col">➔</div>
+
+            <!-- Col 3: Target Role -->
+            <div class="viz-column">
+              <div class="viz-column-title">03 • Target IT Role</div>
+              <div id="viz-role-node" class="viz-node" style="border-color: var(--color-mint); color: var(--color-mint); font-weight: 700;">
+                Senior Data &amp; ML Engineer
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; text-align: center;">
+            <p style="font-size: 0.8rem; color: #64748B;">
+              * Conceptual matching illustration only. Demonstrates domain relationships; does not utilize a proprietary live AI matching engine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 9: Employer CTA Banner
+         ======================================================================= -->
+    <section class="section section-navy">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, rgba(71, 125, 255, 0.15) 0%, rgba(152, 118, 245, 0.15) 100%); border: 1px solid rgba(71, 125, 255, 0.3); border-radius: var(--radius-xl); padding: 3.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+          <div style="max-width: 650px;">
+            <span class="tag-label tag-label-mint">Employer Solutions</span>
+            <h2 style="margin: 0.5rem 0 1rem;">FIND THE TECHNICAL TALENT YOUR NEXT PROJECT NEEDS.</h2>
+            <p style="color: #CBD5E1; font-size: 1.05rem;">Tell us about your technology hiring requirements and explore specialist recruitment support across permanent and contract engineering roles.</p>
+          </div>
+          <div>
+            <a href="employers.html" class="btn btn-lg btn-mint">Submit Your Hiring Requirements</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 10: Candidate CTA Banner
+         ======================================================================= -->
+    <section class="section section-dark">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, rgba(53, 198, 232, 0.12) 0%, rgba(71, 125, 255, 0.15) 100%); border: 1px solid rgba(53, 198, 232, 0.3); border-radius: var(--radius-xl); padding: 3.5rem; text-align: center; max-width: 900px; margin: 0 auto;">
+          <span class="tag-label">Accelerate Your Tech Career</span>
+          <h2 style="margin: 0.75rem 0 1rem;">YOUR NEXT CAREER MOVE COULD BE ONE CLICK AWAY.</h2>
+          <p style="color: #CBD5E1; font-size: 1.1rem; max-width: 640px; margin: 0 auto 2rem;">Browse 15 curated illustrative IT vacancies or register your technical profile in our developer career hub.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="jobs.html" class="btn btn-lg btn-cyan">Explore Technology Jobs</a>
+            <a href="candidates.html" class="btn btn-lg btn-outline">Candidate Career Hub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Section 11: Site Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo-link">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22,3 39,12 39,32 22,41 5,32 5,12" stroke="#477DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(71,125,255,0.08)"/>
+                <circle cx="22" cy="22" r="5" fill="#35C6E8"/>
+                <path d="M22 3L22 17M39 32L26 25M5 32L18 25" stroke="#35C6E8" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">IT TALENT &amp; TECHNOLOGY</span>
+              <span class="brand-subtitle">RECRUITMENT CONSULTANCY</span>
+            </div>
+          </div>
+          <p>TSCG Technologies portfolio demonstration project showcasing specialized IT talent acquisition, engineering specializations, and developer career opportunities.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Candidate Hub</h4>
+          <div class="footer-links">
+            <a href="jobs.html">Browse IT Jobs</a>
+            <a href="candidates.html">Candidate Registration</a>
+            <a href="candidates.html#interview-prep">Interview Preparation</a>
+            <a href="candidates.html#resume-guidance">Resume &amp; GitHub Guide</a>
+            <a href="candidates.html#faq">Candidate FAQ</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Employer Solutions</h4>
+          <div class="footer-links">
+            <a href="employers.html">Hire Tech Talent</a>
+            <a href="employers.html#permanent-hiring">Permanent Recruitment</a>
+            <a href="employers.html#contract-staffing">Contract IT Staffing</a>
+            <a href="employers.html#technical-screening">Technical Screening</a>
+            <a href="employers.html#hiring-form">Post Hiring Requirement</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specializations</h4>
+          <div class="footer-links">
+            <a href="specializations.html#software-development">Software Development</a>
+            <a href="specializations.html#frontend-development">Frontend &amp; UI</a>
+            <a href="specializations.html#backend-development">Backend &amp; Cloud</a>
+            <a href="specializations.html#ai-ml">Artificial Intelligence</a>
+            <a href="specializations.html#cybersecurity">Cybersecurity</a>
+            <a href="specializations.html">All 12 Disciplines</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Details</h4>
+          <div class="footer-links">
+            <a href="contact.html">Hiring Enquiries</a>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Mon–Sat, 9 AM–6 PM IST</span>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Phone: 0000000000</span>
+            <span style="font-size: 0.85rem; color: #94A3B8;">Email: demo@example.com</span>
+            <span style="font-size: 0.8rem; color: #64748B; margin-top: 0.5rem; display: block;">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026–2027 IT Talent &amp; Technology Recruitment. TSCG Technologies Portfolio Demo. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <span>Illustrative Demo Only</span>
+          <span>No Data Stored</span>
+          <a href="contact.html">Privacy Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jobs-data.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
